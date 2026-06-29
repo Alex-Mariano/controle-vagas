@@ -211,9 +211,7 @@ public class SorteioService {
 
                     if (idVagaDeposito != null) {
 
-                        Optional<VagasEntity> dadosVagaEmFrenteDeposito = vagas.stream()
-                                .filter(f -> Objects.equals(f.getIdVaga(), idVagaDeposito))
-                                .findFirst();
+                        Optional<VagasEntity> dadosVagaEmFrenteDeposito = vagas.stream().filter(f -> Objects.equals(f.getIdVaga(), idVagaDeposito)).findFirst();
 
                         String nroVaga = dadosVagaEmFrenteDeposito.get().getNroVaga();
                         String andarVaga = dadosVagaEmFrenteDeposito.get().getAndarVaga();
@@ -223,9 +221,7 @@ public class SorteioService {
 
                         if (idVagaPNE != null) {
 
-                            Optional<VagasEntity> dadosVagaPNE = vagas.stream()
-                                    .filter(f -> Objects.equals(f.getIdVaga(), idVagaPNE))
-                                    .findFirst();
+                            Optional<VagasEntity> dadosVagaPNE = vagas.stream().filter(f -> Objects.equals(f.getIdVaga(), idVagaPNE)).findFirst();
 
                             nroVaga = dadosVagaPNE.get().getNroVaga();
                             andarVaga = dadosVagaPNE.get().getAndarVaga();
@@ -239,9 +235,7 @@ public class SorteioService {
 
                         if (idVagaPNE != null) {
 
-                            Optional<VagasEntity> dadosVagaPNE = vagas.stream()
-                                    .filter(f -> Objects.equals(f.getIdVaga(), idVagaPNE))
-                                    .findFirst();
+                            Optional<VagasEntity> dadosVagaPNE = vagas.stream().filter(f -> Objects.equals(f.getIdVaga(), idVagaPNE)).findFirst();
 
                             String nroVaga = dadosVagaPNE.get().getNroVaga();
                             String andarVaga = dadosVagaPNE.get().getAndarVaga();
