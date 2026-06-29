@@ -1,10 +1,12 @@
 package com.api.controlevagas.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "RESULTADO")
 public class ResultadoEntity {
@@ -13,6 +15,7 @@ public class ResultadoEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID_RESULTADO", nullable = false, unique = true)
     private Integer idResultado;
+
     @Column(name = "NUMEROAPARTAMENTO")
     private Integer numeroApartamento;
 
@@ -33,5 +36,8 @@ public class ResultadoEntity {
 
     @Column(name = "ANDARVAGA2", length = 5)
     private String andarVaga2;
+
+    @Column(name = "ID_VAGA_PNE")
+    private Integer idVagaPNE;
 
 }

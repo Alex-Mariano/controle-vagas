@@ -11,4 +11,6 @@ public interface VagasRepository extends JpaRepository<VagasEntity, Integer> {
 
     List<VagasEntity> findByEnfrenteDepositoAndTipoVaga(boolean enfrenteDeposito, String tipoVaga);
 
+    List<VagasEntity> findByNroVagaAndTipoVaga(String nroVaga, String tipoVaga);
+
 }

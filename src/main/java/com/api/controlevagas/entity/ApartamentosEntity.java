@@ -22,4 +22,7 @@ public class ApartamentosEntity {
     @Column(name = "ID_VAGA_DEPOSITO")
     private Integer idVagaDeposito;
 
+    @Column(name = "ID_VAGA_PNE")
+    private Integer idVagaPNE;
+
 }
